@@ -1,0 +1,76 @@
+meta:
+  initialized: true
+project: Material-X three-species accommodation
+system: Material-X + species A/B/C in point defects
+current_stage: three-species accommodation classification FROZEN (demo)
+
+canonical_datasets:
+  matched_transitions:
+    value: 12
+    definition: "REPORT_MATCHED_TRANSITIONS (4 defects x 3 species) - demo"
+    source: dataset:ds_mx_canonical
+    date: "2026-08-14"
+    status: FROZEN
+    confidence: HIGH
+  available_transitions:
+    value: 18
+    definition: "REPORT_ALL_AVAILABLE_TRANSITIONS - demo"
+    source: dataset:ds_mx_canonical
+    date: "2026-08-14"
+    status: FROZEN
+    confidence: HIGH
+
+frozen_definitions:
+  descriptors:
+    V_before: defect-free cavity capacity
+    Vcav: per-defect computed cavity volume (NOT intrinsic van der Waals radius)
+    Dmin: minimum species-species distance
+    Rg: radius of gyration of the cluster
+    DR1: host first-shell signed radial displacement
+  transition_channels:
+    C1: 1 - Vcav_N3/Vcav_N2
+    C2: 1 - Dmin_N3/Dmin_N2
+    Ec: Rg_N3 - Rg_N2
+    Hh: DR1_N3 - DR1_N2
+
+current_conclusions:
+  species_ranked_accommodation:
+    claim_id: claim_species_ranked
+    topic: species_ranked_accommodation
+    value: CONTINUOUS SCALE-DEPENDENT RESPONSE EVOLUTION 连续尺度依赖响应演化
+    source: dataset:ds_mx_canonical
+    date: "2026-08-14"
+    status: ACCEPTED
+    confidence: HIGH
+  matched_transitions:
+    claim_id: claim_matched
+    topic: matched_transitions
+    value: 12
+    source: dataset:ds_mx_canonical
+    date: "2026-08-14"
+    status: ACCEPTED
+    confidence: HIGH
+  available_transitions:
+    claim_id: claim_available
+    topic: available_transitions
+    value: 18
+    source: dataset:ds_mx_canonical
+    date: "2026-08-14"
+    status: ACCEPTED
+    confidence: HIGH
+  mechanism_status:
+    claim_id: claim_mechanism
+    topic: mechanism_status
+    value: not established 尚未确立
+    source: dataset:ds_mx_canonical
+    date: "2026-08-14"
+    status: ACCEPTED
+    confidence: HIGH
+
+rejected_results: {}
+superseded_results: []
+pending_changes: []
+blockers:
+  - mechanism descriptors not frozen
+next_steps:
+  - run falsifiable probe tests

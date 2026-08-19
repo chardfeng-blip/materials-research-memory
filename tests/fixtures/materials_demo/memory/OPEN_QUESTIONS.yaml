@@ -1,0 +1,5 @@
+questions:
+  - "mechanism probe: can band-structure analysis falsify the geometric mechanism?"
+blockers:
+  - "mechanism descriptors not frozen"
+next_step_owners: ["reviewer/human"]

@@ -1,0 +1,19 @@
+{
+  "datasets": [
+    {
+      "dataset_id": "ds_mx_canonical",
+      "name": "mx_canonical_master",
+      "path": "data/material_x/master_clean.csv",
+      "version": "1",
+      "status": "FROZEN",
+      "scope": "demo",
+      "rows": 12,
+      "columns": ["defect", "species", "response"],
+      "definition": "fictional canonical dataset used by the hermetic test fixture",
+      "source": "fixture",
+      "created_at": "2026-08-14T00:00:00+08:00",
+      "supersedes": null,
+      "superseded_by": null
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+meta:
+  initialized: false
+project: null
+system: null
+current_stage: null
+canonical_datasets: {}
+frozen_definitions: {}
+current_conclusions: {}
+rejected_results: {}
+superseded_results: []
+blockers: []
+next_steps: []
+pending_changes: []
+
